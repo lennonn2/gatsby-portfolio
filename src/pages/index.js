@@ -17,7 +17,7 @@ export default ({data}) => (
     </Helmet>
     {/* <header className={styles.header}>Header</header> */}
     <section className={styles.body}>
-      <Img className={styles.imgWrapper} fixed={data.file.childImageSharp.fixed} />
+      <Img className={styles.imgWrapper} fluid={data.file.childImageSharp.fluid} />
       <div className={styles.name}>Niall Lennon</div>
       <p className={styles.text}>Software Developer - building cool things over at <a href="https://zenhub.com">zenhub</a></p>
       <div className={styles.icons}>
@@ -34,8 +34,8 @@ export const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fixed(width: 250, height: 250) {
-          ...GatsbyImageSharpFixed
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
