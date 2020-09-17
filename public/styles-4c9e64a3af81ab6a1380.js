@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{vGFT:function(e,n,o){e.exports={app:"index-module--app--Lcjv3",body:"index-module--body--3CZU5",imgWrapper:"index-module--imgWrapper--3PWpf",name:"index-module--name--1vmXB",icons:"index-module--icons--2M2GF",linkIcon:"index-module--linkIcon--UwUvw",iconGH:"index-module--iconGH--1Apb9",iconLI:"index-module--iconLI--2CCf1",text:"index-module--text--24Z4b"}}}]);
-//# sourceMappingURL=styles-4c9e64a3af81ab6a1380.js.map
