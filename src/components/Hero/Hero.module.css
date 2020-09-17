@@ -1,23 +1,10 @@
-body {
-  margin: 0;
-}
-
-.app {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-/* .header {
-  display: flex;
-  position: sticky;
-} */
-
 .body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--light-color-secondary);
+  margin: 30px;
+  padding: 30px;
 }
 
 .imgWrapper {
@@ -32,6 +19,14 @@ body {
   line-height: 65px;
   text-align: center;
   margin: 0.3em 0.1em;
+}
+
+.text {
+  margin: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-size: 26px;
+  text-align: center;
 }
 
 .icons {
@@ -53,12 +48,8 @@ body {
   fill: #3385ff;
 }
 
-.text {
-  margin: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  font-size: 26px;
-  text-align: center;
+.linkIcon:hover .iconAL {
+  fill: #8f8f8f;
 }
 
 .text a {
@@ -68,4 +59,16 @@ body {
 
 .text a:hover {
   color: #5e60babf;
+}
+
+:global(.darkTheme) .name {
+  color: var(--dark-color);
+}
+
+:global(.darkTheme) .text {
+  color: var(--dark-color);
+}
+
+:global(.darkTheme) .linkIcon svg {
+  fill: var(--dark-color);
 }

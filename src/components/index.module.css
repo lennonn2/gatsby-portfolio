@@ -1,0 +1,66 @@
+.app {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background: var(--light-background);
+}
+
+/* .backgroundWrapper {
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-pack: center;
+  justify-content: center;
+  display: flex;
+} */
+
+/* .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  color: #f1f4f7;
+} */
+
+/* .background svg {
+  height: 100%;
+  width: 100%;
+}
+
+.backgroundOverlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0) 34.99%,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+} */
+
+.iconButton {
+  background: none;
+  color: inherit;
+  border: none;
+  box-shadow: none;
+  line-height: 0;
+  padding: 0 5px;
+  appearance: none;
+  outline: none;
+}
+
+:global(.darkTheme) .app {
+  background-color: var(--dark-background);
+}
+
+:global(.darkTheme) .iconButton {
+  color: var(--dark-background);
+}

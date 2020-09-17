@@ -1,0 +1,56 @@
+.experience {
+  display: flex;
+  width: 100%;
+  margin: 30px;
+}
+
+.experience h3,
+.experience h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.imgWrapper {
+  display: flex;
+  height: 150px;
+  min-width: 150px;
+  padding: 30px;
+}
+
+.imgWrapper svg {
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.header {
+}
+
+.subheader {
+}
+
+.text {
+  flex: 1 1 500px;
+}
+
+:global(.darkTheme) .experience h3 {
+  color: var(--dark-color);
+}
+
+:global(.darkTheme) .experience .text {
+  color: var(--dark-color);
+}
+
+:global(.darkTheme) .experience h5 {
+  color: var(--dark-color);
+}
